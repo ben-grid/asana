@@ -1,0 +1,11 @@
+<h1>Timers</h1>
+
+<ul>
+{{#each timer in controller}}
+  <li>{{#linkTo 'timer' timer}}{{timer.duration}}{{/linkTo}}</li>
+{{else}}
+  <li>There are no Timers.</li>
+{{/each}}
+</ul>
+
+{{outlet}}
